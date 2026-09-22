@@ -1,5 +1,11 @@
 # AGENTS.md — Academy PLP Pre Footer FAQ importer
 
+## Repository handoff
+
+This `aso-botpc` checkout is the original development copy. The repository of record for all future PLP Pre Footer FAQ automation work is the sibling checkout `../aso-botpc-automation` (absolute path: `/Users/A0800955/Documents/GitHub/aso-botpc-automation`), whose `origin` is `https://github.com/Academy-Sports-Outdoors/aso-botpc-automation.git`. The user confirmed this is the clone they will use; `aso-botpc-autoomation` in their message was a spelling error. Start new coding-agent sessions in that checkout, follow its `AGENTS.md` and `README.md`, and make code, workflow, documentation, and test changes there. Do not make this copy a second source of truth or silently sync changes between the two repositories.
+
+The product and safety details below are retained as historical context. Where they differ from the sibling repository, follow the sibling repository's current files.
+
 ## Mission
 
 Import bottom of page FAQ content from one Google Doc per Academy PLP. The Doc explicitly declares `PLP Type`, `PLP URL`, and `Category ID`. Supported PLP types are Brand, L1, L2, and L3. Each PLP gets its own `preFooter200` cloned from the Pre Footer template. Later imports update the same importer-owned Pre Footer. Save drafts by default; publish only with explicit flags and an existing environment.
